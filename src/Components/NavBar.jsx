@@ -29,10 +29,10 @@ const NavBar = ({ toggleLogin, handleLogout }) => {
 
   return (
     <div className="navbar-container">
-      <h1>Navbar Component</h1>
+      <h1>Wits & Wheels</h1>
       <h2>
         <Link style={{ textDecoration: "none" }} to="/">
-          Your image or Logo (click here to go to Landing Page)
+          "Where there is a wheel, there is a way" Logo (click here to go to Landing Page)
         </Link>
       </h2>
 

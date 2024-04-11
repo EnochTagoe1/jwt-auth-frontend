@@ -7,6 +7,7 @@ import Login from "./Components/Login";
 import Dashboard from "./Components/Dashboard";
 import NavBar from "./Components/NavBar";
 import LandingPage from "./Components/LandingPage";
+import Cars from "./Components/Cars"
 
 function App() {
   const navigate = useNavigate();
@@ -27,6 +28,7 @@ function App() {
         toggleLogin={toggleLogin}
         setToggleLogin={setToggleLogin}
       />
+      <Cars />
 
       <Routes>
         <Route path="/" element={<LandingPage />} />
