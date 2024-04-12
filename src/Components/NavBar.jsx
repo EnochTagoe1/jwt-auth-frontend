@@ -30,15 +30,17 @@ const NavBar = ({ toggleLogin, handleLogout }) => {
   return (
     <div className="navbar-container">
       <h1>Wits & Wheels</h1>
-      <h2>
+      <h3>
         <Link style={{ textDecoration: "none" }} to="/">
-          "Where there is a wheel, there is a way" Logo (click here to go to Landing Page)
+          "Where there is a wheel, there is a way"🚗 (click!)
         </Link>
-      </h2>
+      </h3>
 
       {!toggleLogin ? (
         <Link to={"/login"}>
+          <button>
           <span>Login</span>
+          </button>
         </Link>
       ) : (
         <div>
