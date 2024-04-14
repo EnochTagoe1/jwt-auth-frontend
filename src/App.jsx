@@ -7,7 +7,7 @@ import Login from "./Components/Login";
 import Dashboard from "./Components/Dashboard";
 import NavBar from "./Components/NavBar";
 import LandingPage from "./Components/LandingPage";
-//import Cars from "./Components/Cars";
+import Cars from "./Components/Cars";
 // import Footer from "./Components/Footer";
 
 function App() {
