@@ -3,10 +3,10 @@ import { Link, useParams, useNavigate } from "react-router-dom";
 //import Reviews from './Reviews'
 
 
-function SongDetails() {
+function CarDetails() {
     const API = import.meta.env.VITE_BASE_URL;
     console.log(API)
-  const [song, setSong] = useState({
+  const [car, setCar] = useState({
     make: "",
     model: "",
     make_year: "",
@@ -20,24 +20,24 @@ function SongDetails() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch(`${API}/songs/${id}`)
+    fetch(`${API}/cars/${id}`)
       .then((response) => response.json())
-      .then((data) => setSong(data))
+      .then((data) => setCar(data))
       .catch((error) => console.error(error));
   }, [id]);
 
-  function deleteSong() {
-    fetch(`${API}/songs/${id}`, {
+  function deleteCar() {
+    fetch(`${API}/cars/${id}`, {
       method: "DELETE",
     })
-      .then(() => navigate(`/songs`))
+      .then(() => navigate(`/cars`))
       .catch((error) => console.error(error));
   }
 
   return (
     <article>
       <h3>
-        {song.is_favorite ? <span>⭐️</span> : null} {song.name}
+        {car.is_favorite ? <span>⭐️</span> : null} {car.name}
       </h3>
       <h5>
         
@@ -45,22 +45,28 @@ function SongDetails() {
         
        
       </h5>
-      <h6>{song.artist}</h6>
-      <p>{song.album}</p>
-      <p>{song.time}</p>
+      <h6>{car.user}</h6>
+      <p>{car.make}</p>
+      <p>{car.model}</p>
+      <p>{car.make_year}</p>
+      <p>{car.color}</p>
+      <p>{car.cylinders}</p>
+      <p>{car.price}</p>
+      <p>{car.image_path}</p>
+      <p>{car.is_favorite}</p>
       <div className="showNavigation">
         <div>
-          <Link to={`/songs`}>
+          <Link to={`/cars`}>
             <button>Back</button>
           </Link>
         </div>
         <div>
-          <Link to={`/songs/${id}/edit`}>
+          <Link to={`/cars/${id}/edit`}>
             <button>Edit</button>
           </Link>
         </div>
         <div>
-          <button onClick={deleteSong}>Delete</button>
+          <button onClick={deleteCar}>Delete</button>
         </div>
       </div>
       {/* <Reviews /> */}
@@ -68,4 +74,4 @@ function SongDetails() {
   );
 }
 
-export default SongDetails;
+export default CarDetails;

@@ -63,61 +63,61 @@ function CarEditForm() {
     updateCar();
   };
 
-  return (
-    <div className="Edit">
-      <form onSubmit={handleSubmit}>
-        <label htmlFor="name">Name:</label>
-        <input
-          id="name"
-          value={car.name}
-          type="text"
-          onChange={handleTextChange}
-          placeholder="Name of Website"
-          required
-        />
-        <label htmlFor="url">URL:</label>
-        <input
-          id="url"
-          type="tcar
-          pattern="http[s]*://.+"
-          required
-          value={car.url}
-          placeholder="http://"
-          onChange={handleTextChange}
-        />
-        <label htmlFor="category">Category:</label>
-        <input
-          id="category"
-          type="text"
-          name="category"
-          value={car.category}
-          placeholder="educational, inspirational, ..."
-          onChange={handleTextChange}
-        />
-        <label htmlFor="is_favorite">Favorite:</label>
-        <input
-          id="is_favorite"
-          type="checkbox"
-          onChange={handleCheckboxChange}
-          checked={car.is_favorite}
-        />
-        <label htmlFor="description">Description:</label>
-        <textarea
-          id="description"
-          name="description"
-          value={car.description || ""}
-          onChange={handleTextChange}
-          placeholder="Describe why you selected this song"
-        />
-        <br />
+//   return (
+//     <div className="Edit">
+//       <form onSubmit={handleSubmit}>
+//         <label htmlFor="name">Name:</label>
+//         <input
+//           id="name"
+//           value={car.name}
+//           type="text"
+//           onChange={handleTextChange}
+//           placeholder="Name of Website"
+//           required
+//         />
+//         <label htmlFor="url">URL:</label>
+//         <input
+//           id="url"
+//           type="tcar
+//           pattern="http[s]*://.+"
+//           required
+//           value={car.url}
+//           placeholder="http://"
+//           onChange={handleTextChange}
+//         />
+//         <label htmlFor="category">Category:</label>
+//         <input
+//           id="category"
+//           type="text"
+//           name="category"
+//           value={car.category}
+//           placeholder="educational, inspirational, ..."
+//           onChange={handleTextChange}
+//         />
+//         <label htmlFor="is_favorite">Favorite:</label>
+//         <input
+//           id="is_favorite"
+//           type="checkbox"
+//           onChange={handleCheckboxChange}
+//           checked={car.is_favorite}
+//         />
+//         <label htmlFor="description">Description:</label>
+//         <textarea
+//           id="description"
+//           name="description"
+//           value={car.description || ""}
+//           onChange={handleTextChange}
+//           placeholder="Describe why you selected this song"
+//         />
+//         <br />
 
-        <input type="submit" />
-      </form>
-      <Link to={`/cars/${id}`}>
-        <button>Nevermind!</button>
-      </Link>
-    </div>
-  );
+//         <input type="submit" />
+//       </form>
+//       <Link to={`/cars/${id}`}>
+//         <button>Nevermind!</button>
+//       </Link>
+//     </div>
+//   );
 }
 
 export default CarEditForm;

@@ -1,7 +1,7 @@
 * {
-  margin: 0;
-  padding: 0;
+  margin: 2px;
+  padding: 2px;
   box-sizing: border-box;
   font-family: "Montserrat Alternates";
-  background-color: rgb(141, 141, 203);
+  /* background-color: rgb(244, 203, 37); */
 }

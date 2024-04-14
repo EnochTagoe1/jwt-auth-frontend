@@ -6,7 +6,7 @@ const API = import.meta.env.VITE_BASE_URL;
 function Cars() {
   const [cars, setCars] = useState([]);
   useEffect(() => {
-    fetch(`${API}/cars`)
+    fetch(`${API}/api/cars`)
       .then((res) => {
         return res.json();
       })
@@ -22,9 +22,9 @@ function Cars() {
         <table>
           <thead>
             <tr>
-              {/* <th></th> */}
+              <th></th>
               <th>Click to Login</th>
-              {/* <th>See this car</th> */}
+              
             </tr>
           </thead>
           <tbody>

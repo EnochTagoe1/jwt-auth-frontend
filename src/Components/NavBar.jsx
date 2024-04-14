@@ -38,9 +38,10 @@ const NavBar = ({ toggleLogin, handleLogout }) => {
 
       {!toggleLogin ? (
         <Link to={"/login"}>
-          <button>
-          <span>Login</span>
-          </button>
+          
+          <button type="submit" class="btn btn-primary btn-rounded">Login</button>
+
+         
         </Link>
       ) : (
         <div>

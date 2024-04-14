@@ -66,14 +66,13 @@ const Login = ({ setToggleLogin }) => {
       <h1>Login Component</h1>
       <br />
       <h2>
-        Use the DemoUser button to login and save time during your presentation
+        
       </h2>
-      <button onClick={handleDemoSignIn}>Demo User</button>
-      <br />
-      <br />
-      <br />
+      <button onClick={handleDemoSignIn} class="btn btn-primary">Demo User</button>
 
-      <h3> Remove the 'br' tags and these instructions if you use this code</h3>
+      
+
+      <h3> </h3>
 
       <br />
       <br />
@@ -101,7 +100,8 @@ const Login = ({ setToggleLogin }) => {
             autoComplete="current-password"
           />
         </label>
-        <button>Submit</button>
+        <button type="submit" class="btn btn-primary btn-rounded">Submit</button>
+
       </form>
       <p>
         No Account? <Link to="/register">Register</Link>
