@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 
 import { Link } from "react-router-dom";
+// import NavBar.css from "./Component/Navbar.css"
+
 
 const URL = import.meta.env.VITE_BASE_URL;
 

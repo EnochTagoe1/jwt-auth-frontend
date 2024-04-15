@@ -78,7 +78,7 @@ function CarEditForm() {
 //         <label htmlFor="url">URL:</label>
 //         <input
 //           id="url"
-//           type="tcar
+//           type="car
 //           pattern="http[s]*://.+"
 //           required
 //           value={car.url}

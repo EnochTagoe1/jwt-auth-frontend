@@ -6,7 +6,7 @@ function LandingPage() {
 
   return (
     <div style={{ textAlign: "center", marginTop: 100 }}>
-      <h1>This is Your Landing Page</h1>
+      <h1>Landing Page</h1>
 
       <h3>
         Dashboard is a protected component. If you are not logged in and you try

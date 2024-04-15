@@ -1,6 +1,13 @@
 import { Link } from "react-router-dom";
 
-
+// "make": "BENZ",
+// "model": "MAYBACH",
+// "make_year": 1987,
+// "color": "SILVER",
+// "cylinders": "12CYL",
+// "price": 120000,
+// "image_path": "imageurl",
+// "is_favorite": false
 
 function Car({ car }) {
   return (
@@ -14,7 +21,7 @@ function Car({ car }) {
       </td>
       <td style={{ cursor: "alias" }}>
         <a href={car.url} target="_blank" rel="noreferrer">
-          {car.name}
+          {car.make} {car.model} {car.make_year}
         </a>
       </td>
       <td>

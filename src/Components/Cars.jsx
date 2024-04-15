@@ -1,12 +1,14 @@
 import { useState, useEffect } from "react";
+import { useOutletContext } from "react-router-dom";
 import Car from "./Car";
 
 const API = import.meta.env.VITE_BASE_URL;
 
 function Cars() {
+    const { user } = useOutletContext();
   const [cars, setCars] = useState([]);
   useEffect(() => {
-    fetch(`${API}/api/cars`)
+    fetch(`${API}/api/cars/user/${user.id}`)
       .then((res) => {
         return res.json();
       })
