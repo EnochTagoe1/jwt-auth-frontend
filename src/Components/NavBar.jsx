@@ -31,7 +31,8 @@ const NavBar = ({ toggleLogin, handleLogout }) => {
 
   return (
     <div className="navbar-container">
-      <h1>Wits & Wheels</h1>
+      {/* <img src="https://www.audiusa.com/content/dam/nemo/us/models/R8/R8-Heritage/1920x1080_R8080055_large.jpg?imwidth=1920&imdensity=1" alt="Logo" style={{ maxWidth: "100vh",maxHeight:"100vh" }} /> */}
+      <h1 style={{ textAlign: "center" }}>Wits & Wheels</h1>
       <h3>
         <Link style={{ textDecoration: "none" }} to="/">
           "Where there is a wheel, there is a way"🚗 (click!)

@@ -1,10 +1,10 @@
-// function Home() {
-//     return (
-//       <div>
-//         <h2>Welcome</h2>
-//         <h3>To the greatest Music app!</h3>
-//       </div>
-//     );
-//   }
+function Home() {
+    return (
+      <div>
+        <h2></h2>
+        {/* <h3>Dashboard??</h3> */}
+      </div>
+    );
+  }
   
-//   export default Home;
+  export default Home;

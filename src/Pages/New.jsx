@@ -1,12 +1,12 @@
-// import CarNewForm from "../Components/CarNewForm";
+import CarNewForm from "../Components/CarNewForm";
 
-// function New() {
-//   return (
-//     <div className="New">
-//       <h2>New Car</h2>
-//       <CarNewForm />
-//     </div>
-//   );
-// }
+function New() {
+  return (
+    <div className="New">
+      <h2>New Car</h2>
+      <CarNewForm />
+    </div>
+  );
+}
 
-// export default New;
+export default New;

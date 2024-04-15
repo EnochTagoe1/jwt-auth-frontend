@@ -84,7 +84,7 @@ const Register = ({ setToggleLogin }) => {
           />
         </label>
 
-        <button>Submit</button>
+        <button type="submit" class="btn btn-primary btn-rounded">Submit</button>
       </form>
     </div>
   );

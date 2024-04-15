@@ -63,61 +63,48 @@ function CarEditForm() {
     updateCar();
   };
 
-//   return (
-//     <div className="Edit">
-//       <form onSubmit={handleSubmit}>
-//         <label htmlFor="name">Name:</label>
-//         <input
-//           id="name"
-//           value={car.name}
-//           type="text"
-//           onChange={handleTextChange}
-//           placeholder="Name of Website"
-//           required
-//         />
-//         <label htmlFor="url">URL:</label>
-//         <input
-//           id="url"
-//           type="car
-//           pattern="http[s]*://.+"
-//           required
-//           value={car.url}
-//           placeholder="http://"
-//           onChange={handleTextChange}
-//         />
-//         <label htmlFor="category">Category:</label>
-//         <input
-//           id="category"
-//           type="text"
-//           name="category"
-//           value={car.category}
-//           placeholder="educational, inspirational, ..."
-//           onChange={handleTextChange}
-//         />
-//         <label htmlFor="is_favorite">Favorite:</label>
-//         <input
-//           id="is_favorite"
-//           type="checkbox"
-//           onChange={handleCheckboxChange}
-//           checked={car.is_favorite}
-//         />
-//         <label htmlFor="description">Description:</label>
-//         <textarea
-//           id="description"
-//           name="description"
-//           value={car.description || ""}
-//           onChange={handleTextChange}
-//           placeholder="Describe why you selected this song"
-//         />
-//         <br />
-
-//         <input type="submit" />
-//       </form>
-//       <Link to={`/cars/${id}`}>
-//         <button>Nevermind!</button>
-//       </Link>
-//     </div>
-//   );
+  return (
+    <div className="Edit">
+      <form onSubmit={handleSubmit}>
+        <div className="mb-3">
+          <label htmlFor="make" className="form-label">Make</label>
+          <input type="text" className="form-control" id="make" value={car.make} onChange={handleTextChange} />
+        </div>
+        <div className="mb-3">
+          <label htmlFor="model" className="form-label">Model</label>
+          <input type="text" className="form-control" id="model" value={car.model} onChange={handleTextChange} />
+        </div>
+        <div className="mb-3">
+          <label htmlFor="make_year" className="form-label">Make Year</label>
+          <input type="text" className="form-control" id="make_year" value={car.make_year} onChange={handleTextChange} />
+        </div>
+        <div className="mb-3">
+          <label htmlFor="color" className="form-label">Color</label>
+          <input type="text" className="form-control" id="color" value={car.color} onChange={handleTextChange} />
+        </div>
+        <div className="mb-3">
+          <label htmlFor="cylinders" className="form-label">Cylinders</label>
+          <input type="text" className="form-control" id="cylinders" value={car.cylinders} onChange={handleTextChange} />
+        </div>
+        <div className="mb-3">
+          <label htmlFor="price" className="form-label">Price</label>
+          <input type="text" className="form-control" id="price" value={car.price} onChange={handleTextChange} />
+        </div>
+        <div className="mb-3">
+          <label htmlFor="image_path" className="form-label">Image Path</label>
+          <input type="text" className="form-control" id="image_path" value={car.image_path} onChange={handleTextChange} />
+        </div>
+        <div className="form-check mb-3">
+          <input type="checkbox" className="form-check-input" id="is_favorite" checked={car.is_favorite} onChange={handleCheckboxChange} />
+          <label className="form-check-label" htmlFor="is_favorite">Is Favorite</label>
+        </div>
+        <button type="submit" className="btn btn-primary">Add Car</button>
+      </form>
+      <Link to={`/cars/${id}`}>
+        <button>Nevermind!</button>
+      </Link>
+    </div>
+  );
 }
 
 export default CarEditForm;
