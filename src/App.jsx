@@ -8,11 +8,14 @@ import Dashboard from "./Components/Dashboard";
 import NavBar from "./Components/NavBar";
 import LandingPage from "./Components/LandingPage";
 import Cars from "./Components/Cars";
+import CarNewForm from "./Components/CarNewForm";
+import CarDetails from "./Components/CarDetails";
 // import Footer from "./Components/Footer";
 
 function App() {
   const navigate = useNavigate();
   const [toggleLogin, setToggleLogin] = useState(false);
+  const carDetails = useNavigate();
 
   async function handleLogout() {
     localStorage.removeItem("token");
@@ -50,6 +53,17 @@ function App() {
             element={<Dashboard handleLogout={handleLogout} />}
           />
         </Route>
+
+        <Route
+            path="/newcar"
+            element={<CarNewForm  />}
+          />
+
+        <Route
+            path="/cardetails"
+            element={<CarDetails  />}
+          />
+        
       </Routes>
     </>
   );

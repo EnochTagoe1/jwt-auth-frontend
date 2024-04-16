@@ -72,6 +72,6 @@ function CarDetails() {
       {/* <Reviews /> */}
     </article>
   );
-}
+}  
 
 export default CarDetails;
