@@ -11,6 +11,7 @@ import Cars from "./Components/Cars";
 import CarNewForm from "./Components/CarNewForm";
 import CarDetails from "./Components/CarDetails";
 // import Footer from "./Components/Footer";
+import CarEditForm from "./Components/CarEditForm";
 
 function App() {
   const navigate = useNavigate();
@@ -68,7 +69,13 @@ function App() {
             path="/cardetails/:id"
             element={<CarDetails  />}
           />
+      
+        <Route
+            path="/cars/:id/edit"
+            element={<CarEditForm  />}
+          />
         </Route>
+
       </Routes>
     </div>
   );
