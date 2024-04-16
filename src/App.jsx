@@ -26,7 +26,7 @@ function App() {
   }
 
   return (
-    <>
+    <div className="app">
       <NavBar
         handleLogout={handleLogout}
         toggleLogin={toggleLogin}
@@ -46,13 +46,18 @@ function App() {
           element={<Register setToggleLogin={setToggleLogin} />}
         />
 
+<Route
+          path="/cars"
+          element={<Cars setToggleLogin={setToggleLogin} />}
+        />
+
         <Route element={<ProtectedRoute />}>
           {/* Place protected routes here */}
           <Route
             path="/dashboard"
             element={<Dashboard handleLogout={handleLogout} />}
           />
-        </Route>
+        
 
         <Route
             path="/newcar"
@@ -60,12 +65,12 @@ function App() {
           />
 
         <Route
-            path="/cardetails"
+            path="/cardetails/:id"
             element={<CarDetails  />}
           />
-        
+        </Route>
       </Routes>
-    </>
+    </div>
   );
 }
 

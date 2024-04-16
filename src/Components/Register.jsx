@@ -49,7 +49,7 @@ const Register = ({ setToggleLogin }) => {
       <p>
         Already have an account? <Link to="/login">Login</Link>
       </p>
-      <h3>Register</h3>
+      <h3>Register***</h3>
       <form onSubmit={handleSubmit}>
         <label htmlFor="username">
           <input

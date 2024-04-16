@@ -19,14 +19,15 @@ function Car({ car }) {
           <span>&nbsp; &nbsp; &nbsp;</span>
         )}
       </td>
-      <td style={{ cursor: "alias" }}>
-        <a href={car.url} target="_blank" rel="noreferrer">
+      <td style={{ cursor: "pointer" }}>
+        {/* <a href={car.url} target="_blank" rel="noreferrer"> */}
+        <Link to={`/cardetails/${car.id}`}>
           {car.make} {car.model} {car.make_year}
-        </a>
+          ✏️</Link>
+        {/* </a> */}
       </td>
-      <td>
-        <Link to={`/car/${car.id}`}>✏️</Link>
-      </td>
+      {/* <td>
+      </td> */}
     </tr>
   );
 }

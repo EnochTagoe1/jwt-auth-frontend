@@ -30,15 +30,18 @@ const NavBar = ({ toggleLogin, handleLogout }) => {
   }, [toggleLogin]);
 
   return (
-    <div className="navbar-container" style={{
-      backgroundImage: `url('https://www.audiusa.com/content/dam/nemo/us/models/R8/R8-Heritage/1920x1080_R8080055_large.jpg?imwidth=1920&imdensity=1')`,
-      backgroundSize: 'cover',
-      backgroundPosition: 'center',
-      backgroundRepeat: 'no-repeat',
-      width: '100vw',
-      height: '100vh',
-      overflow: 'hidden'
-    }}>
+    <div className="navbar-container" 
+    // style={{
+    //   backgroundImage: `url('https://www.audiusa.com/content/dam/nemo/us/models/R8/R8-Heritage/1920x1080_R8080055_large.jpg?imwidth=1920&imdensity=1')`,
+    //   backgroundSize: 'cover',
+    //   backgroundPosition: 'center',
+    //   backgroundRepeat: 'no-repeat',
+    //   width: '100vw',
+    //   height: '100vh',
+    //   overflow: 'hidden'
+    // }}
+    
+    >
       <h1 style={{ textAlign: "center" }}>Wits & Wheels</h1>
       <h3>
         <Link style={{ textDecoration: "none" }} to="/">
@@ -49,7 +52,7 @@ const NavBar = ({ toggleLogin, handleLogout }) => {
       {!toggleLogin ? (
         <Link to={"/login"}>
           
-          <button type="submit" class="btn btn-primary btn-rounded">Login</button>
+          <button type="submit" className="btn btn-primary btn-rounded">Login</button>
 
          
         </Link>

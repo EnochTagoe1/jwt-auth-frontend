@@ -1,9 +1,11 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useOutletContext } from "react-router-dom";
 
 const API = import.meta.env.VITE_BASE_URL;
 
 function CarNewForm() {
+  const {user}=useOutletContext();
+  console.log(user)
   const navigate = useNavigate();
   const [car, setCar] = useState({
     make: "",
@@ -18,15 +20,16 @@ function CarNewForm() {
 
   // Add a car. Redirect to the index view.
   const addCar = () => {
-    fetch(`${API}/cars`, {
+
+    fetch(`${API}/api/cars`, {
       method: "POST",
-      body: JSON.stringify(car),
+      body: JSON.stringify({...car, user_id: user.id}),
       headers: {
         "Content-Type": "application/json",
       },
     })
       .then(() => {
-        navigate(`/cars`);
+        navigate(`/dashboard`);
       })
       .catch((error) => console.error("catch", error));
   };
