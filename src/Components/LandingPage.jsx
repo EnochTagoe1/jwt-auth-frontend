@@ -8,7 +8,7 @@ function LandingPage() {
     <div style={{ textAlign: "center", marginTop: 10 }}>
       
       <h1>Welcome!</h1>
-      <h4>Got to your dashboard</h4>
+      <h4>Go to your dashboard</h4>
 <Link to="/dashboard">Dashboard</Link>
       <div  style={{
       backgroundImage: `url('https://www.audiusa.com/content/dam/nemo/us/models/R8/R8-Heritage/1920x1080_R8080055_large.jpg?imwidth=1920&imdensity=1')`,

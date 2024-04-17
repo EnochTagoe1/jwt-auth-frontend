@@ -12,6 +12,7 @@ import CarNewForm from "./Components/CarNewForm";
 import CarDetails from "./Components/CarDetails";
 // import Footer from "./Components/Footer";
 import CarEditForm from "./Components/CarEditForm";
+import AboutUsPage from "./Components/AboutUs";
 
 function App() {
   const navigate = useNavigate();
@@ -33,11 +34,18 @@ function App() {
         toggleLogin={toggleLogin}
         setToggleLogin={setToggleLogin}
       />
+      {/* <AboutUsPage /> */}
       {/* <Cars /> */}
       {/* <Footer /> */}
 
       <Routes>
         <Route path="/" element={<LandingPage />} />
+
+        <Route
+          path="/aboutus"
+          element={<AboutUsPage setToggleLogin={setToggleLogin} />}
+        />
+
         <Route
           path="/login"
           element={<Login setToggleLogin={setToggleLogin} />}

@@ -53,7 +53,10 @@ const NavBar = ({ toggleLogin, handleLogout }) => {
         <Link to={"/login"}>
           
           <button type="submit" className="btn btn-primary btn-rounded">Login</button>
+          <br></br>
 
+          <Link to="/aboutus">About Us</Link>
+          
          
         </Link>
       ) : (

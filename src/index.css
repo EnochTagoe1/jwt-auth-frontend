@@ -1,6 +1,7 @@
 * {
   /* margin: 2px;
   padding: 2px; */
+  /* border-spacing: 10px; */
   box-sizing: border-box;
   font-family: "Montserrat Alternates";
   /* background-color: rgb(244, 203, 37); */
@@ -8,5 +9,5 @@
 }
 .app { width: 100vw;
         height: 100vh;
-  background-image: url("https://static.vecteezy.com/system/resources/previews/002/410/738/non_2x/rough-metallic-surface-texture-background-free-photo.jpg");
+  /* background-image: url("https://static.vecteezy.com/system/resources/previews/002/410/738/non_2x/rough-metallic-surface-texture-background-free-photo.jpg"); */
 }
