@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const AboutUsPage = () => {
   return (
@@ -24,8 +25,8 @@ const AboutUsPage = () => {
             </a>
           </p>
           <p>
-          <Link to="/">
-              <button className="btn btn-rect-to-round btn-rect-to-round--red"> Back to Home </button>
+          <Link  to="/">
+          <button className="btn btn-primary rounded-pill">Back to Home</button>
             </Link>
           </p>
         </div>

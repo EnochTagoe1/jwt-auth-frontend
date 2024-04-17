@@ -57,18 +57,17 @@ function CarDetails() {
       <div className="showNavigation">
         <div>
           <Link to={`/dashboard`}>
-          <button className="btn btn-sm btn-light rounded">Back</button>
+          <button className="btn btn-primary rounded-pill">Back</button>
           </Link>
         </div>
         <div>
           <Link to={`/cars/${id}/edit`}>
-          <button className="btn btn-sm btn-light rounded">Edit</button>
+          <button className="btn btn-primary rounded-pill">Edit</button>
           </Link>
         </div>
         <div>
-        <button onClick={deleteCar} className="btn btn-sm btn-light rounded">Delete</button>
+        <button onClick={deleteCar} className="btn btn-primary rounded-pill">Delete</button>
         </div>
-        <div>{car.model}</div>
       </div>
       {/* <Reviews /> */}
     </article>

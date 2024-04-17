@@ -43,11 +43,11 @@ const NavBar = ({ toggleLogin, handleLogout }) => {
     
     >
       <h1 style={{ textAlign: "center" }}>Wits & Wheels</h1>
-      <h3>
+      <h4>
         <Link style={{ textDecoration: "none" }} to="/">
-          "Where there is a wheel, there is a way"🚗 (click!)
+          "Where there is a wheel, there is a way"🚗 (Homepage)
         </Link>
-      </h3>
+      </h4>
 
       {!toggleLogin ? (
         <Link to={"/login"}>
