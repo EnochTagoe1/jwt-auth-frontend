@@ -77,7 +77,7 @@ const Login = ({ setToggleLogin }) => {
       <br />
       <br />
       <br />
-      <h3>Functional Login***</h3>
+      <h3>Login</h3>
       <form onSubmit={handleSubmit}>
         <label htmlFor="username">
           <input
